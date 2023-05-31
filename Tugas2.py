@@ -1,13 +1,13 @@
 # membuat class mahasiswa yang berisi nama,nim dan jurusan
 class Mahasiswa:
-    def __init__(self, nama, npm, jurusan):
+    def __init__(self, nama, nim, jurusan):
         self.nama = nama
-        self.npm = npm
+        self.nim = nim
         self.jurusan = jurusan
 
     def tampilkan_info(self):
         print("Nama Mahasiswa:", self.nama)
-        print("NPM:", self.npm)
+        print("NIM:", self.npm)
         print("Jurusan:", self.jurusan.NamaJurusan)
 
 # membuat kelas jurusan yang mana berfungsi untuk menampilkan daftar mahasiswa yang ada pada suatu jurusan
@@ -24,7 +24,7 @@ class Jurusan:
         print("\nDaftar Mahasiswa di Jurusan", self.NamaJurusan)
         for mahasiswa in self.DaftarMahasiswa:
             print("- Nama:", mahasiswa.nama)
-            print("  NPM:", mahasiswa.npm)
+            print("  NIM:", mahasiswa.nim)
 
 # membuat kelas universitas yang mana class ini berfungsi agar kita bisa menambahkan jurusan dan menampilkannya 
 # pada daftar jurusan yang ada
